@@ -4,4 +4,11 @@
     <string name="game_name">Rock Paper Scissors</string>
     <string name="question_mark">Question Mark</string>
     <string name="select_object">Select object</string>
+    <string name="object_selected">You choose %s!</string>
+    <string name="lost">You lose!</string>
+    <string name="draw">Draw!</string>
+    <string name="won">You won!</string>
+    <string name="users_object">users object</string>
+    <string name="fight">Fight!</string>
+    <string name="again">Again!</string>
 </resources>

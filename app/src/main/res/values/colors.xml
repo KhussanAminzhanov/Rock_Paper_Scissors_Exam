@@ -7,8 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="header">#120B3F</color>
+    <color name="purple">#120B3F</color>
     <color name="background">#EDC0C0</color>
-    <color name="btn_select_object_background">#6DC0FC</color>
-    <color name="btn_select_object_border">#159ECA</color>
+    <color name="btn_background">#6DC0FC</color>
+    <color name="btn_border">#159ECA</color>
+    <color name="red">#971313</color>
+    <color name="gray">#FF0000</color>
+    <color name="green">#039000</color>
 </resources>

@@ -14,7 +14,7 @@
         android:layout_marginTop="85dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/game_name"
-        android:textColor="@color/header"
+        android:textColor="@color/purple"
         android:textFontWeight="700"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,30 +35,62 @@
         tools:text="Choose a weapon" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_opponents_object"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/question_mark"
         android:scaleType="fitCenter"
         android:src="@drawable/im_question"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_select_object"
         app:layout_constraintEnd_toStartOf="@+id/btn_select_object"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_select_object"
-        android:contentDescription="@string/question_mark" />
+        app:layout_constraintTop_toBottomOf="@+id/hint" />
+
+    <ImageView
+        android:id="@+id/iv_users_object"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/users_object"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_opponents_object"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_opponents_object"
+        app:layout_constraintTop_toTopOf="@+id/iv_opponents_object"
+        tools:src="@drawable/im_rock" />
 
     <Button
         android:id="@+id/btn_select_object"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_select_object"
         android:background="@drawable/shape_btn_select_object"
-        android:layout_marginTop="128dp"
-        android:textSize="18sp"
         android:fontFamily="@font/montserrat_regular"
+        android:text="@string/btn_select_object"
+        android:textSize="18sp"
         app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_opponents_object"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/hint" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_opponents_object"
+        app:layout_constraintTop_toTopOf="@+id/iv_opponents_object" />
+
+    <Button
+        android:id="@+id/btn_fight"
+        android:layout_width="207dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/shape_btn_fight_start"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/fight"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
