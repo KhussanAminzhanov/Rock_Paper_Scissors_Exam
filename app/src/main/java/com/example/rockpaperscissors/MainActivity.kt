@@ -1,7 +1,6 @@
 package com.example.rockpaperscissors
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.activity.viewModels
@@ -73,17 +72,14 @@ class MainActivity : AppCompatActivity() {
             var textColor = R.color.black
             binding.hint.text = when (gameState) {
                 MainViewModel.GameState.PC_WON -> {
-                    Log.i("activity", "pc won")
                     textColor = R.color.red
                     getString(R.string.lost)
                 }
                 MainViewModel.GameState.USER_WON -> {
-                    Log.i("activity", "user won")
                     textColor = R.color.green
                     getString(R.string.won)
                 }
                 MainViewModel.GameState.DRAW -> {
-                    Log.i("activity", "Draw")
                     textColor = R.color.purple
                     getString(R.string.draw)
                 }
@@ -96,7 +92,6 @@ class MainActivity : AppCompatActivity() {
                 null -> ""
             }
             binding.hint.setTextColor(textColor)
-
         }
         model.userObject.observe(this) {
             if (it == null) return@observe
